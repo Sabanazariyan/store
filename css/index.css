@@ -177,3 +177,104 @@ h4 {
   border-radius: 5px;
   font-size: 0.9rem;
 }
+
+/* دسکتاپ - پیش فرض همین کدهای اصلیه نیازی به تغییر خاص نیست */
+
+/* تبلت */
+/* @media (max-width: 1024px) {
+  #container {
+    flex-direction: column;
+    margin: 40px 0 20px;
+  }
+
+  #filter {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+
+  #filter div {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #products {
+    justify-content: center;
+  }
+
+  #products > div {
+    width: 45%;
+  }
+
+  img {
+    width: 180px;
+    height: 180px;
+    margin: 30px 0 20px;
+  }
+} */
+
+/* موبایل */
+@media (max-width: 768px) {
+  header {
+    /* flex-direction: column; */
+    margin: 0 20px 30px 20px;
+    align-items: center;
+    gap: 20px;
+  }
+#search {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+ #search input {
+    width: 90%;
+    margin-bottom: 10px;
+
+  }
+  /* #search h1{
+    margin: 0 20px 15px 20px;
+  }  */
+
+  /* #search button {
+    width: 100%;
+  } */
+
+  #container {
+    flex-direction: column-reverse;
+    margin: 20px 0;
+  }
+
+  #filter {
+    width: 90%;
+    margin: 0 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #products {
+    justify-content: center;
+  }
+
+  #products > div {
+    width: 90%;
+  }
+
+  #products img {
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+    margin: 20px 0 20px;
+  }
+  #products h4{
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px){
+  #search input {
+    width: 83%;
+  }
+}

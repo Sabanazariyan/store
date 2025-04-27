@@ -51,6 +51,7 @@ header button:hover {
 
 h1 {
   margin: 50px 0 40px;
+  margin-left: 15px;
 }
 
 #card h3 {
@@ -79,5 +80,98 @@ h1 {
 }
 
 #card i {
-    margin-right: 5px;
+  margin-right: 5px;
+}
+
+@media (max-width: 1024px) {
+  #card {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px 15px;
+  }
+
+  #card div {
+    margin-top: 20px;
+  }
+
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  #card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px 10px;
+  }
+
+  #card h3 {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 1.2rem;
+  }
+
+  #card p {
+    font-size: 1rem;
+  }
+
+  #card div {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  header a,
+  header button {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  header a {
+    display: block;
+    margin-bottom: 10px;
+  }
+  #container {
+    padding-top: 100px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  form {
+    padding: 30px;
+    width: 90%;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  button {
+    width: 48%;
+    float: right; /* دکمه سمت راست */
+  }
+
+  a {
+    width: 48%;
+    float: left; /* لینک سمت چپ */
+    margin-top: 20px;
+  }
+
+  a p {
+    margin-left: 10px;
+  }
 }
